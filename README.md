@@ -1,25 +1,22 @@
-# 📧 AI Email Automation System
+# AI Email Follow-Up Automation
 
-An intelligent Python-based email automation system that reads Gmail inbox messages, detects follow-up emails, and automatically sends appropriate replies using AI logic.
+This project is a Python-based email automation system that reads Gmail emails,
+detects follow-up messages, and automatically sends replies.
 
----
+## Features
+- Reads Gmail inbox using IMAP
+- Detects follow-up intent
+- Auto-replies to emails
+- Skips newsletters and no-reply emails
+- Demo mode for safe testing
 
-## 🚀 Features
-- 📩 Reads unread emails from Gmail
-- 🧠 Detects follow-up or reply-required emails
-- ✉️ Automatically sends smart replies
-- 🔐 Secure Gmail authentication
-- ⚙️ Easy to configure and extend
-
----
-
-## 🛠️ Technologies Used
+## Technologies Used
 - Python
 - IMAP & SMTP
-- EmailMessage (Python Standard Library)
-- Gmail App Passwords
-- AI-based intent detection (rule-based / extendable)
+- Rule-based NLP
+- Gmail App Password
 
----
-
-## 📂 Project Structure
+## How to Run
+1. Clone the repository
+2. Create a `config.py` file with your email credentials
+3. Run:
