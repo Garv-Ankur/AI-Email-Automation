@@ -17,7 +17,7 @@ def main():
         intent = detect_intent(body)
         print("🧠 Intent:", intent)
 
-        # ❌ Skip system / no-reply / newsletter emails
+        #  Skip system / no-reply / newsletter emails
         sender_lower = sender.lower()
         skip_words = [
             "no-reply", "noreply", "do-not-reply",
@@ -29,7 +29,7 @@ def main():
             print("🚫 Skipped system/newsletter email")
             return
 
-        # ✅ Reply ONLY to follow-up emails
+        # Reply ONLY to follow-up emails
         if intent == "Follow-up":
             send_reply(
                 sender,
