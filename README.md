@@ -16,7 +16,4 @@ detects follow-up messages, and automatically sends replies.
 - Rule-based NLP
 - Gmail App Password
 
-## How to Run
-1. Clone the repository
-2. Create a `config.py` file with your email credentials
-3. Run:
+
