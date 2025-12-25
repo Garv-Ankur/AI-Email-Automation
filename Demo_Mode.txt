@@ -2,7 +2,6 @@ from email_reader import read_unread_emails
 from email_sender import send_reply
 from intent_detector import detect_intent
 
-# 🔁 Toggle this to False when you want real Gmail emails
 DEMO_MODE = True
 
 def main():
