@@ -12,7 +12,7 @@ def read_unread_emails():
     mail.select("INBOX")
     print("📂 Inbox selected")
 
-    # 🔍 Get UNREAD emails
+    # Get UNREAD emails
     status, messages = mail.search(None, "UNSEEN")
     email_ids = messages[0].split()
     print("📨 Unread emails found:", len(email_ids))
@@ -21,7 +21,7 @@ def read_unread_emails():
         mail.logout()
         return []
 
-    # ✅ PICK ONLY THE LATEST UNREAD EMAIL
+    # PICK ONLY THE LATEST UNREAD EMAIL
     latest_email_id = email_ids[-1]
     print("📥 Fetching latest email ID:", latest_email_id)
 
